@@ -1,0 +1,185 @@
+.form {
+  padding: 40px;
+}
+
+.form-title {
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--main-titles-color);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-field input,
+.form-field textarea {
+  min-height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* «C3» При получении инпутом фокуса, его рамка и иконка меняют цвет */
+
+.form-field input:focus,
+.form-field textarea:focus {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+}
+
+.form-field input:focus + svg,
+.form-field svg:focus {
+  cursor: pointer;
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-field .form-icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+}
+
+.form-field .comment {
+  padding: 12px 16px;
+}
+
+.comment-position {
+  margin-bottom: 20px;
+}
+
+.policy-position {
+  margin-bottom: 30px;
+}
+
+.form-field .policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.link-policy {
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+/* «C4» Оригинальный чекбокс о принятии лицензионного соглашения в форме заявки скрыт. */
+
+.checkbox {
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute; */
+
+  /* position: absolute; */
+  /* display: block; */
+  width: 0px;
+  /* height: 15px; */
+  /* height: 1px; */
+  /* margin: -3px; */
+  /* border: 0; */
+  /* padding: 0; */
+
+  /* white-space: nowrap; */
+  /* clip-path: inset(100%); */
+  /* clip: rect(0 0 0 0); */
+  /* overflow: hidden; */
+}
+
+.checkbox-icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+}
+
+.checkbox-icon svg {
+  position: absolute;
+  /* width: 16px; */
+  /* height: 15px; */
+}
+
+/* «C5» Оформление «чекбокса» о принятии лицензионного соглашения сделано вручную, при помощи векторного изображения галочки из SVG-спрайта. */
+
+.checkbox:checked + .checkbox-icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  /* position: absolute; */
+  /* background-image: url(../images/icon-check.svg); */
+  /* background-size: contain; */
+  background-origin: border-box;
+}
+
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+
+  min-width: 200px;
+  min-height: 50px;
+
+  background: #188ce8;
+  border-color: #188ce8;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
