@@ -9,11 +9,11 @@
 .footer-container {
   display: flex;
   align-items: baseline;
+  & .position {
+    flex-grow: 1;
+  }
 }
 
-.footer-container .position {
-  flex-grow: 1;
-}
 .footer-logo {
   color: var(--primary-white-color);
 
@@ -22,10 +22,6 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-
-.footer-address-list {
-  margin-top: 20px;
 }
 
 .footer-list .item:not(:last-child) {
@@ -37,6 +33,10 @@
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
+
+  &-list {
+    margin-top: 20px;
+  }
 }
 
 .footer-contacts {
@@ -67,39 +67,38 @@
 
 /* «C1» Выполнено оформление элементов формы подписки на рассылку в футере. */
 
-.footer-form-title {
-  margin-bottom: 20px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-
-  color: #ffffff;
-}
-
 .footer-form {
   margin-left: 93px;
+  &-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
 }
 
 .footer-form-field {
   display: flex;
-}
 
-.footer-form-field input {
-  min-width: 358px;
-  min-height: 50px;
-}
+  & input {
+    min-width: 358px;
+    min-height: 50px;
+  }
 
-.footer-form-field .email {
-  padding: 15px 16px;
+  & .email {
+    padding: 15px 16px;
 
-  color: #ffffff;
+    color: #ffffff;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: #2f303a;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+  }
 }
 
 .footer-submit-button {
@@ -120,11 +119,11 @@
   border-color: #2196f3;
   background: #2196f3;
   border-radius: 4px;
-}
 
-.footer-submit-button:focus,
-.footer-submit-button:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }
 
 .button-svg {

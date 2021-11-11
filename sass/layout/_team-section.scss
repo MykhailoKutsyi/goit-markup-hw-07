@@ -16,9 +16,10 @@
 
 .teammate-item {
   width: 270px;
-}
-.teammate-item:not(:last-child) {
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .teammate-content {
