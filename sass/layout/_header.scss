@@ -1,16 +1,17 @@
-.header-border-bottom-line {
+.header {
   border-bottom: solid 1px #ececec;
 }
 
 /* Site nav */
 
-.nav {
+.container__header {
   display: flex;
   align-items: center;
 }
 
-.nav__list {
+.nav {
   display: flex;
+  align-items: center;
 }
 
 .nav__item {
@@ -23,7 +24,7 @@
   margin-right: 50px;
 }
 
-.site-nav {
+.nav__link {
   color: var(--title-text-color);
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -36,7 +37,7 @@
 }
 
 /* «C4» В главной навигации, при помощи псевдоэлемента ::after, сделано подчёркивание ссылки текущей страницы (на которой сейчас находится пользователь). */
-.current {
+.nav__link--current {
   color: var(--accent-color);
   &::after {
     position: absolute;

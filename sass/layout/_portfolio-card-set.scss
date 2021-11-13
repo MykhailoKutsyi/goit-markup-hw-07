@@ -1,31 +1,15 @@
-/* Cards */
+/* Gallery */
 
-.cards-header {
-  margin-bottom: 4px;
-
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.cards-description {
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-}
-
-.portfolio-gallery {
+.gallery {
   display: flex;
   flex-wrap: wrap;
 }
+
 /* calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке */
 /* Для всех елементов-карточек в сетке добавить маржин справа, кроме каждого третего (так как в ряду - три елемента) */
 /* Для всех елементов-карточек в сетке добавить маржин снизу, кроме последних трех елементов (так как в нижнем ряду - три елемента) */
 
-.portfolio-gallery-item {
+.gallery__item {
   width: calc((100% - 60px) / 3);
 
   &:not(:nth-child(3n)) {
@@ -37,7 +21,7 @@
   }
 }
 
-.portfolio-gallery-link {
+.gallery__link {
   display: inline-block;
   border: solid 1px;
   border-color: #eeeeee;
@@ -51,11 +35,30 @@
   }
 }
 
-.gallery-decription {
+/* Cards */
+
+.card {
   padding: 20px 24px;
   background-color: #ffffff;
   border-bottom: 1px solid;
   border-left: 1px solid;
   border-right: 1px solid;
   border-color: #eeeeee;
+
+  &__title {
+    margin-bottom: 4px;
+
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &__description {
+    color: var(--primary-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+  }
 }

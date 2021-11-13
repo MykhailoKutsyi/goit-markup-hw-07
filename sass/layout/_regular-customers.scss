@@ -3,11 +3,11 @@
   display: flex;
 }
 
-.customer-item:not(:last-child) {
+.customer__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customer-link {
+.customer__link {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,10 +1,5 @@
 /* Hero */
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .hero {
   margin-right: auto;
   margin-left: auto;
@@ -28,7 +23,7 @@
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   display: inline-block;
   margin-bottom: 30px;
 
@@ -43,10 +38,12 @@
   text-transform: uppercase;
 }
 
-.hero-button {
+.hero__button {
   display: block;
   margin: 0px auto;
   padding: 10px 32px;
+
+  cursor: pointer;
 
   background-color: var(--accent-color);
   color: var(--primary-white-color);

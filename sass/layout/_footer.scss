@@ -6,15 +6,18 @@
   padding: 60px 0;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
-  & .position {
+  &--position {
     flex-grow: 1;
   }
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 
   font-family: Raleway, sans-serif;
@@ -24,33 +27,33 @@
   text-decoration: none;
 }
 
-.footer-list .item:not(:last-child) {
+.footer-logo--accent {
+  color: var(--accent-color);
+}
+
+.contacts__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-address {
+.contacts__address {
   color: var(--primary-white-color);
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
-
-  &-list {
-    margin-top: 20px;
-  }
 }
 
-.footer-contacts {
+.contacts__info {
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   text-decoration: none;
   font-style: normal;
 }
 
-.footer-socials-form {
+.footer-socials {
   margin-left: 70px;
 }
 
-.footer-socials-title {
+.footer-socials__title {
   margin-top: 0px;
   margin-bottom: 20px;
   font-size: 14px;
@@ -60,7 +63,7 @@
   color: var(--primary-white-color);
 }
 
-.footer-socials-link {
+.socials__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--primary-white-color);
 }
@@ -69,7 +72,8 @@
 
 .footer-form {
   margin-left: 93px;
-  &-title {
+
+  &__title {
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -81,30 +85,29 @@
   }
 }
 
-.footer-form-field {
+.footer-form__field {
   display: flex;
-
-  & input {
-    min-width: 358px;
-    min-height: 50px;
-  }
-
-  & .email {
-    padding: 15px 16px;
-
-    color: #ffffff;
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background: #2f303a;
-  }
 }
 
-.footer-submit-button {
+.footer-form__email {
+  padding: 15px 16px;
+
+  min-width: 358px;
+  min-height: 50px;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+}
+
+.footer-form__button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   margin-left: 12px;
 
   min-width: 200px;
@@ -126,6 +129,6 @@
   }
 }
 
-.button-svg {
+.footer-form__button--margin {
   margin-left: 10px;
 }

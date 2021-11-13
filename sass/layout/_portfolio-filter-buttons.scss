@@ -1,4 +1,15 @@
-.filter-buttons {
+.filters {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filters__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters__button {
   padding: 6px 22px;
 
   color: var(--title-text-color);
@@ -24,18 +35,7 @@
   }
 }
 
-.current-button {
+.filters__button--current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
-
-.portfolio-buttons-list {
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 50px;
-}
-
-.portfolio-buttons-list .button-item:not(:last-child) {
-  margin-right: 8px;
 }

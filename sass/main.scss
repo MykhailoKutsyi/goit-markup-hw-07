@@ -6,13 +6,11 @@ body {
 
 // utils
 @import "./utils/variables";
-@import "./utils/visually-hidden";
 
 //base
 @import "./base/common";
 
 //components
-@import "./components/backdrop";
 @import "./components/container";
 @import "./components/modal-form";
 @import "./components/modal";
@@ -21,10 +19,11 @@ body {
 //layout
 
 //first page
-@import "./layout/benefits";
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/logo";
+@import "./layout/benefits";
+@import "./layout/works";
 @import "./layout/regular-customers";
 @import "./layout/socials";
 @import "./layout/team-section";
